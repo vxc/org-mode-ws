@@ -2,7 +2,7 @@
 #+AUTHOR: Venkatesh Chopella & Puneeth Chaganti
 #+STARTUP: hidestars odd
 
-* Introduction                                                         :work:
+* Introduction
 *** Org-mode
     - 2003, Free Software
     - Organizing everything in your life
@@ -47,7 +47,7 @@
 *** Org-mode as an outliner
     - Anything that has structure can be represented as an outline
     - Capture, write, edit, restructure notes and information
-*** Outline keys                                                       :work:
+*** Outline keys
     | Action         | Key   |
     |----------------+-------|
     | Cycle subtree  | TAB   |
@@ -92,9 +92,6 @@
 *** Supported Languages
 * Planning
 *** TODO items
-    :PROPERTIES:
-    :ADDED:    ad
-    :END:
 *** Schedules/Deadlines
     - Date/Time interface
 *** Tags
