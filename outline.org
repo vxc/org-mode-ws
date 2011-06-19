@@ -1,0 +1,112 @@
+#+TITLE: Org-mode Workshop -- IIIT Hyderabad
+#+AUTHOR: Venkatesh Chopella & Puneeth Chaganti
+#+STARTUP: hidestars odd
+
+* Introduction                                                         :work:
+*** Org-mode
+    - 2003, Free Software
+    - Organizing everything in your life
+      + Major mode in emacs
+*** Emacs
+    - Existed for decades
+    - Editor for text files
+    - Keyboard commands heavy
+    - Self-documenting
+    - Highly customizable/extensible
+    - Major & Minor Modes
+*** Why Emacs?
+    - Many other useful systems
+    - Ultra portable
+*** Plain text
+    - Truly portable
+    - ~grep~ and other tools
+    - Version control
+* Emacs Basics
+*** Opening and Closing files
+***** Managing Buffers
+*** Basic Movement
+*** Basic Editing
+*** Modes 
+    + Python
+    + Shell
+    + Dired
+*** Getting Help
+    + C-h a
+    + C-h f
+    + C-h c
+    + C-h w
+    + C-h i
+*** Miscellaneous
+***** Customization
+******* Inhibit Start-up message
+        #+begin_src emacs-lisp
+          (setq inhibit-startup-message t)
+        #+end_src
+
+* Notes
+*** Org-mode as an outliner
+    - Anything that has structure can be represented as an outline
+    - Capture, write, edit, restructure notes and information
+*** Outline keys                                                       :work:
+    | Action         | Key   |
+    |----------------+-------|
+    | Cycle subtree  | TAB   |
+    | Cycle globally | S-TAB |
+
+*** Restructuring Text
+    - Up/Down
+    - Promote/Demote
+      
+    Alt (+ Shift) + Arrow keys 
+*** Hyperlinks/Markup
+*** Directives #+
+    - #+STARTUP: hidestars
+* Tables
+*** Structure editing
+    - M-<up>/<down>
+    - M-S-<up>/<down>
+    - M-<right>/<left>
+    - M-S-<right>/<left>
+    - C-c ^
+*** Spreadsheets
+***** Calculations
+***** Format specifier
+* Exporting & Publishing
+*** HTML
+*** LaTeX
+    - Embedded LaTeX
+#*** Export Web-site
+* Babel
+*** Enable Languages
+#+begin_src emacs-lisp
+  (org-babel-do-load-languages
+               'org-babel-load-languages
+               '((python . t)
+                 (emacs-lisp . t)
+                 (ditaa . t)
+                 (sh . t)
+                 ))
+#+end_src
+*** Including code blocks
+*** Exporting
+*** Supported Languages
+* Planning
+*** TODO items
+    :PROPERTIES:
+    :ADDED:    ad
+    :END:
+*** Schedules/Deadlines
+    - Date/Time interface
+*** Tags
+    - completion
+*** Sparse Trees 
+*** Capture & Agenda views
+*** Property Drawer
+***** Column view
+* Conclusion
+*** Orgmode Quotes
+*** Other applications
+    - MobileOrg
+    - org-info-js
+    - org2blog
+
