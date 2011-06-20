@@ -1,0 +1,41 @@
+#+TITLE: Example File
+* Course Description
+* Syllabus
+* Marks
+  #+TBLNAME: marks
+  | Names    | Test-1 | Test-2 |
+  |----------+--------+--------|
+  | Alex     |      7 |     21 |
+  | Beth     |    6.5 |   26.5 |
+  | Crystal  |      4 |     22 |
+  | Dolores  |      8 |     29 |
+  | Elsie    |      5 |     27 |
+  | Eric     |    8.5 |     22 |
+  | Francis  |      8 |     35 |
+  | Gretchen |    6.5 |     24 |
+  | Hazel    |      6 |     26 |
+  | Jean     |      5 |     27 |
+  | Jerome   |    4.5 |     26 |
+  | Julia    |      7 |     29 |
+  | Karen    |      4 |     26 |
+  | Kristine |      8 |     33 |
+  | Malcolm  |      9 |     31 |
+  | Marion   |    7.5 |     21 |
+  | Neal     |      8 |     30 |
+  | Paige    |    8.5 |     28 |
+  | Patrick  |      4 |     26 |
+  | Sandy    |      8 |     35 |
+  | Sherri   |    7.5 |     22 |
+  | Wesley   |      9 |     25 |
+
+* Scatter Plot of Marks
+  #+begin_src python :var one=marks[,1] :var two=marks[,2] :results silent
+    from matplotlib import pylab
+    pylab.scatter(one, two)
+    pylab.savefig('scatter.png')
+    pylab.show()
+  #+end_src
+
+  [[./scatter.png]]
+
+
