@@ -147,14 +147,26 @@
 * Planning
 *** TO-DO items
 *** Schedules/Deadlines
+    - ~C-c C-s~
+    - ~C-c C-d~
     - Date/Time interface
 *** Tags
+    - ~C-c C-c~
     - completion
+*** Capture
+    + Adding capture templates
 *** Sparse Trees 
-*** Capture & Agenda views
-*** Property Drawer
-***** Column view
+    + ~C-c / t~
+*** Agenda views
+    + Defining agenda files
+    + ~C-c a a~
+    + ~C-c a t~
+*** Refiling
 * Conclusion
+*** Topics NOT covered
+    + Property Drawer
+    + Clocking
+    + ...
 *** Orgmode Quotes
 *** Other applications
     - MobileOrg
