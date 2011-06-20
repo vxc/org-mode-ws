@@ -1,6 +1,7 @@
-#+TITLE: Org-mode Workshop -- IIIT Hyderabad
+#+TITLE: Org-mode Workshop
 #+AUTHOR: Venkatesh Chopella & Puneeth Chaganti
 #+STARTUP: hidestars odd
+#+EPRESENT_FRAME_LEVEL: 2
 
 * Introduction
 *** Org-mode
@@ -22,26 +23,54 @@
     - ~grep~ and other tools
     - Version control
 * Emacs Basics
+*** Starting and Exiting emacs
+    - ~emacs <filename>~
+    - emacs
+    - Quitting emacs
 *** Opening and Closing files
-***** Managing Buffers
+    - Open file
+    - Save file
+    - Close file
+    - Concept of Buffers
+      - Switching Buffers
+      - Closing Buffers
 *** Basic Movement
+    - Forward/Backward Char
+    - Forward/Backward Word
+    - Previous/Next Line
+    - Forward/Backward Sentence
+    - Previous/Next Screen
+    - Beginning/End of Line
+    - Beginning/End of Buffer
+    - Search
 *** Basic Editing
+    - Killing/Cutting text
+    - Yanking text
+    - Undo
 *** Modes 
-    + Python
-    + Shell
-    + Dired
+    - Major Modes
+      - Python
+      - Shell
+      - Dired
+    - Minor modes
+      - Flyspell
+      - Yasnippet
 *** Getting Help
-    + C-h a
-    + C-h f
-    + C-h c
-    + C-h w
-    + C-h i
-*** Miscellaneous
-***** Customization
-******* Inhibit Start-up message
-        #+begin_src emacs-lisp
-          (setq inhibit-startup-message t)
-        #+end_src
+    - C-h a
+    - C-h f
+    - C-h c
+    - C-h w
+    - C-h i
+*** Customizable
+    Highly customizable
+    - Inhibit Start-up message
+      #+begin_src emacs-lisp
+        (setq inhibit-startup-message t)
+      #+end_src
+    - Set default major mode as org-mode
+      #+begin_src emacs-lisp
+        (setq default-major-mode 'org-mode)
+      #+end_src
 
 * Notes
 *** Org-mode as an outliner
@@ -59,7 +88,16 @@
       
     Alt (+ Shift) + Arrow keys 
 *** Hyperlinks/Markup
-*** Directives #+
+    - Emphasis and monospace
+      - *bold*
+      - /italic/
+      - _underline_
+      - +strike through+
+      - =code=
+    - Hyperlinks
+*** Directives
+    - #+TITLE:
+    - #+AUTHOR:
     - #+STARTUP: hidestars
 * Tables
 *** Structure editing
@@ -69,14 +107,32 @@
     - M-S-<right>/<left>
     - C-c ^
 *** Spreadsheets
-***** Calculations
-***** Format specifier
+    - Calculations
+    - Format specifier
 * Exporting & Publishing
 *** HTML
+    - ~C-c C-e h~
+    - ~C-c C-e b~
 *** LaTeX
     - Embedded LaTeX
-#*** Export Web-site
+    - ~C-c C-e l~
+    - ~C-c C-e p~
+    - ~C-c C-e d~
 * Babel
+*** Including code blocks
+    - Allows you to include code in documents
+      - Literate Programming
+    - Include the output in exported files
+      - Useful for writing documentation
+    - Supports a whole bunch of languages
+      - C
+      - Haskell
+      - Javascript
+      - Python
+      - R
+      - Shell
+      - You can add other languages!
+
 *** Enable Languages
 #+begin_src emacs-lisp
   (org-babel-do-load-languages
@@ -87,11 +143,9 @@
                  (sh . t)
                  ))
 #+end_src
-*** Including code blocks
-*** Exporting
-*** Supported Languages
+
 * Planning
-*** TODO items
+*** TO-DO items
 *** Schedules/Deadlines
     - Date/Time interface
 *** Tags
