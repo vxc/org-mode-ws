@@ -10,10 +10,32 @@
    (ditaa . t)
    (sh . t)))
 
+
+(global-set-key (kbd "C-c a") 'org-agenda)
+
 ;; Set agenda files
 (setq org-agenda-files (expand-file-name 
 			"agenda-files.org"
 			demo-dir))
+
+;; Refile targets
+; Targets include this file and any file contributing to the agenda -
+; up to 5 levels deep
+(setq org-refile-targets 
+      (quote ((org-agenda-files :maxlevel . 5) 
+              (nil :maxlevel . 5))))
+
+; Targets start with the file name - allows creating level 1 tasks
+(setq org-refile-use-outline-path (quote file))
+
+; Targets complete in steps so we start with filename, TAB shows the
+; next level of targets etc
+(setq org-outline-path-complete-in-steps t)
+
+; Allow refile to create parent tasks with confirmation
+(setq org-refile-allow-creating-parent-nodes (quote confirm))
+
+
 
 ;; Capture templates
 (require 'org-capture)
