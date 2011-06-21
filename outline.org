@@ -1,5 +1,5 @@
 #+TITLE: Org-mode Workshop
-#+AUTHOR: Venkatesh Chopella & Puneeth Chaganti
+#+AUTHOR: Venkatesh Choppella, Puneeth Chaganti
 #+STARTUP: hidestars odd
 #+EPRESENT_FRAME_LEVEL: 2
 
